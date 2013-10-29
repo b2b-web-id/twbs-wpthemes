@@ -19,14 +19,14 @@
 <p><?php _e('Sorry, this page does not exist.'); ?></p>
 <?php endif; ?>
 <?php
-$pagelist = get_pages('sort_column=menu_order&sort_order=asc');
-$pages = array();
-foreach ($pagelist as $page) {
-   $pages[] += $page->ID;
+$postlist = get_posts('sort_column=menu_order&sort_order=asc');
+$posts = array();
+foreach ($postlist as $post) {
+   $posts[] += $post->ID;
 }
-$current = array_search(get_the_ID(), $pages);
-$prevID = $pages[$current-1];
-$nextID = $pages[$current+1];
+$current = array_search(get_the_ID(), $posts);
+$prevID = $posts[$current-1];
+$nextID = $posts[$current+1];
 ?>
 <div class="navigation">
 <?php if (!empty($prevID)) { ?>
