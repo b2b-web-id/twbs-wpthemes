@@ -1,5 +1,8 @@
-<!-- Index -->
 <?php get_header(); ?>
+
+<!-- Index -->
+<div class="row">
+<div class="span8">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 <?php 
@@ -15,4 +18,13 @@
 <?php endwhile; else: ?>
 <p><?php _e('Sorry, this page does not exist.'); ?></p>
 <?php endif; ?>
+<!-- Index -->
+</div>
+<div class="span4">
+<?php get_sidebar(); ?>	
+</div>
+</div>
+
 <?php get_footer(); ?>
+
+
