@@ -1,7 +1,7 @@
      <hr>
 
       <footer>
-        <p>© Company 2012</p>
+        <p>© Lifeteen Indonesia 2013</p>
       </footer>
 
     </div> <!-- /container -->
