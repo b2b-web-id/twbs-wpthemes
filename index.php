@@ -20,7 +20,6 @@
 <?php endif; ?>
 <div class="pull-left"><?php previous_post('&laquo; &laquo; %', '', 'yes'); ?></div>
 <div class="pull-right"><?php next_post('% &raquo; &raquo; ', '', 'yes'); ?></div>
-</div>
 <!-- Index -->
 </div>
 <div class="span4">
