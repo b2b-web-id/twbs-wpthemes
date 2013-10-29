@@ -18,8 +18,7 @@
 <?php endwhile; else: ?>
 <p><?php _e('Sorry, this page does not exist.'); ?></p>
 <?php endif; ?>
-<div class="pull-left"><?php previous_post('&laquo; &laquo; %', '', 'yes'); ?></div>
-<div class="pull-right"><?php next_post('% &raquo; &raquo; ', '', 'yes'); ?></div>
+<div class="navigation"><p><?php posts_nav_link(); ?></p></div>
 <!-- Index -->
 </div>
 <div class="span4">
