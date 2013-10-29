@@ -13,7 +13,7 @@
 <meta name="keywords" content="Lifeteen" />
 <meta name="author" content="Yudha H Tejaningrat" />
 <meta name="generator" content="Nano Editor & GEdit" />
-<title>Lifeteen Indonesia</title>
+<title><?php bloginfo('title'); ?></title>
 
 <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
 <link href="//cdn.kalamangga.net/pustaka/bootstrap/v2.3.2/css/bootstrap.css" rel="stylesheet">
