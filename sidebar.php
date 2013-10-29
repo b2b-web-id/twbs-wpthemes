@@ -6,7 +6,7 @@
 <aside id="archives" class="widget">
 <h2 class="widget-title"><?php _e( 'Arsip', 'lifeteen' ); ?></h2>
 <ul>
-<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
+<?php wp_get_archives(); ?>
 </ul>
 </aside>
 <aside id="meta" class="widget">

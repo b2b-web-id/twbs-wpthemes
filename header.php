@@ -20,25 +20,11 @@
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </a>
-<a class="brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
-<div class="nav-collapse collapse pull-right">
-<?php
-wp_nav_menu(
- array(
-	'theme_location'=>'primer',
-  'container_class'=>'nav-collapse top-collapse',
-	'menu_class'=>'nav pull-right',
-	'depth'=>0,
-	'fallback_cb'=>false,
-	'walker'=>new Lifeteen_Nav_Walker,
-	)); 
-?>
-</ul>
+<a class="brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?>, <?php bloginfo('description'); ?></a>
 </div>
 </div>
 </div>
 </div>
-
 <div class="navbar navbar-static-top">
 <div class="navbar-inner">
 <div class="container">
@@ -53,6 +39,18 @@ wp_nav_menu(
 	'theme_location'=>'sekunder',
   'container_class'=>'nav-collapse bottom-collapse',
 	'menu_class'=>'nav pull-left',
+	'depth'=>0,
+	'fallback_cb'=>false,
+	'walker'=>new Lifeteen_Nav_Walker,
+	)); 
+?>
+<div class="nav-collapse collapse pull-right">
+<?php
+wp_nav_menu(
+ array(
+	'theme_location'=>'primer',
+  'container_class'=>'nav-collapse top-collapse',
+	'menu_class'=>'nav pull-right',
 	'depth'=>0,
 	'fallback_cb'=>false,
 	'walker'=>new Lifeteen_Nav_Walker,
